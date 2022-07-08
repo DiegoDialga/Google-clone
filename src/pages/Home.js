@@ -3,11 +3,6 @@ import { BrowserRouter, Link, Route} from 'react-router-dom';
 import { Button } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 import './Home.css';
-{/*
-import AppsIcon from '@material-ui/icons/Apps';
-import { Avatar } from '@material-ui/core';
-*/}
-
 
 const input = ''
 function Home() {
@@ -35,8 +30,6 @@ function Home() {
                 <div className='home_headerRight'>
                     <Link to='/gmail'>Gmail</Link>
                     <Link to='/images'>Images</Link>
-                    {/*<AppsIcon />
-                    <Avatar />*/}
                 </div>
             </div>
 
@@ -48,9 +41,7 @@ function Home() {
             <div className="home_inputContainer">
                         <form className='search'>
                             <div className='search_input'>
-                                {/* <SearchIcon className = "search_inputIcon"/>*/}
                                 <input value={input} onChange={e => setInput(e.target.value)} />
-                                {/*<Icon>*/}
                             </div>
 
                             <div className='search_buttons'>
