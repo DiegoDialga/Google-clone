@@ -2,9 +2,9 @@ import {useState, useEffect} from 'react';
 import {input} from './Home.js';
 
 
-const SearchEngineId = '5e9a586ce1d07baf0';
+const SearchEngineId = '';
 
-const API_KEY = '';//API key is not in this code for security reasons
+const API_KEY = '';//API key and search engine id are not in this code for security reasons
 
     const Search = (search) =>{
     const [data, setData] = useState(null);
