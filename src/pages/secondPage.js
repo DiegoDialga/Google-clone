@@ -4,7 +4,7 @@ import {input} from './Home.js';
 
 const SearchEngineId = '5e9a586ce1d07baf0';
 
-const API_KEY = 'AIzaSyA_zErNauLorbG5dt8OGfJwx1uuyvSTJIA';
+const API_KEY = '';//API key is not in this code for security reasons
 
     const Search = (search) =>{
     const [data, setData] = useState(null);
