@@ -3,16 +3,22 @@ import { BrowserRouter, Link, Route} from 'react-router-dom';
 import { Button } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 import './Home.css';
+import { useStateValue } from '../StateProvider';
+import { actionTypes } from '../reducer';
 
-const input = ''
 function Home() {
     const [input, setInput] = useState('');
     const history = useHistory();
+    const [{}, dispatch] = useStateValue();
 
 
     const search = e => {
         e.preventDefault();
         //console.log("shut");
+        dispatch({
+            type: actionTypes.SET_SEARCH_TERM,
+            term: input
+        })
 
         history.push('/search');
     }
@@ -55,5 +61,4 @@ function Home() {
         </BrowserRouter>
     );
 }
-export {input};
 export default Home;

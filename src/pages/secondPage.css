@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainBody{
+    margin-top: 35px;
+    margin-left: 25px;
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.mainBody > img{
+ width: 100px;
+    object-fit: contain;
+    margin-top: 7px;
+}
+
+.mainBody > div{
+    border: 1px solid grey;
+    width: 500px;
+    border-radius: 50px;
+    display: flex;
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
+
+.mainBody > div >input{
+    height: 40px;
+    width: 300px;
+    border: none;
+    margin-left: 16px;
+    font-size: large;
+}
+
+.mainBody > div > input:focus{
+    outline-width: 0px;
+}

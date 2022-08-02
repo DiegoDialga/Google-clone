@@ -1,34 +1,17 @@
 import {useState, useEffect} from 'react';
-import {input} from './Home.js';
-
-
-const SearchEngineId = '';
-
-const API_KEY = '';//API key and search engine id are not in this code for security reasons
-
-    const Search = (search) =>{
-    const [data, setData] = useState(null);
-    
-    useEffect(() => {
-        const fetchData = async() =>{
-            fetch(
-                `https://www.googleapis.com/customesearch/v1?key=${API_KEY}&cx=${SearchEngineId}&q=${'elon musk'}`
-            )
-            .then(response => response.json())
-            .then(result =>{setData(result)})}
-        fetchData();
-        
-        }, [search])
-        return data;
-}
+import { useStateValue} from '../StateProvider';
+import Search from './search';
+import './secondPage.css';
 
 function SecondPage(){
-    const [{search}, dispatch] = useState(input);
-    const {data} = Search(search);
+    const [{term}, dispatch] = useStateValue();
+    const {data} = Search(term);
+    console.log(data)
     return(
-        <>
-            {console.log(data)}
-        </>
+        <div className='mainBody'>
+            <img src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png' alt='' />
+            <div><input title='Input' placeholder={term}/></div>
+        </div>
     );
 }
 
