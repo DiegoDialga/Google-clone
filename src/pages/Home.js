@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { BrowserRouter, Link, Route} from 'react-router-dom';
+import { BrowserRouter, Link} from 'react-router-dom';
 import { Button } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 import './Home.css';
@@ -9,7 +9,7 @@ import { actionTypes } from '../reducer';
 function Home() {
     const [input, setInput] = useState('');
     const history = useHistory();
-    const [{}, dispatch] = useStateValue();
+    const [{term}, dispatch] = useStateValue();
 
 
     const search = e => {
@@ -41,7 +41,7 @@ function Home() {
 
             <div className='home_body'>
                 <img
-                    src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png"
                     alt="" />
 
             <div className="home_inputContainer">
@@ -51,8 +51,8 @@ function Home() {
                             </div>
 
                             <div className='search_buttons'>
-                                <Button type='submit' onClick={search} variant='outlined'>Google Search</Button>
-                                <Button variant='outlined'>I'm Feeling Lucky</Button>
+                                <Button type='submit' onClick={search}>Google Search</Button>
+                                <Button>I'm Feeling Lucky</Button>
                             </div>
                         </form>
                 </div>
