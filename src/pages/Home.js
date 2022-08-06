@@ -28,23 +28,17 @@ function Home() {
         <BrowserRouter>
         <div className='home'>
 
-            <div className='home_header'>
-                <div className='home_headerLeft'>
-                    <Link to='/about'>About</Link>
-                    <Link to='/store'>Store</Link>
-                </div>
-                <div className='home_headerRight'>
+            <div className='header'>
                     <Link to='/gmail'>Gmail</Link>
                     <Link to='/images'>Images</Link>
-                </div>
             </div>
 
-            <div className='home_body'>
+            <div className='body'>
                 <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png"
                     alt="" />
 
-            <div className="home_inputContainer">
+            <div className="inputDiv">
                         <form className='search'>
                             <div className='search_input'>
                                 <input value={input} onChange={e => setInput(e.target.value)} />

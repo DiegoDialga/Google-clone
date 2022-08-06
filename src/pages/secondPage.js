@@ -30,7 +30,7 @@ function SecondPage(){
             <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png' alt='' />
             <div>
                 <form>
-                    <input  />
+                    <input value={term} />
                     <button type='submit'/>
                 </form>
             </div>
