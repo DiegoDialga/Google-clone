@@ -16,7 +16,7 @@ function Home() {
         e.preventDefault();
         //console.log("shut");
         dispatch({
-            type: actionTypes.SET_SEARCH_TERM,
+            type: actionTypes.SET_INPUT,
             term: input
         })
 

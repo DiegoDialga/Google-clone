@@ -3,13 +3,13 @@ export const initialState = {
 };
 
 export const actionTypes = {
-    SET_SEARCH_TERM: 'SET_SEARCH_TERM'
+    SET_INPUT: 'SET_INPUT'
 };
 
 const reducer = (state, action) =>{
     console.log(action);
     switch(action.type){
-        case actionTypes.SET_SEARCH_TERM:
+        case actionTypes.SET_INPUT:
             return{
                 ...state, term: action.term
             };
