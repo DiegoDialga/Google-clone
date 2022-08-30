@@ -1,54 +1,82 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 .mainBody{
-    margin-top: 35px;
-    margin-left: 25px;
+    margin-top: 25px;
+    margin-left: 15px;
     display: flex;
     align-items: flex-start;
 
 }
 
 .mainBody > img{
- width: 100px;
+    width: 100px;
     object-fit: contain;
     margin-top: 7px;
+    -webkit-box-reflect: below -10px
+    linear-gradient(to bottom, rgba(0,0,0,0.0), 
+    rgba(0,0,0,0.2))
 }
 
-.mainBody > div{
+.searchBarDiv{
     border: 1px solid grey;
-    width: 500px;
+    width: 40vw;
     border-radius: 50px;
     display: flex;
-    margin-left: 35px;
+    margin-left: 20px;
     margin-bottom: 10px;
+    justify-content: space-between;
+    min-width: 400px;
 }
 
-.mainBody > div >form >input{
+.mainBody > div >.searchBarDiv >form >input{
     height: 40px;
-    width: 300px;
+    width: 45%;
     border: none;
-    margin-left: 16px;
+    margin-left: 1px;
+    margin-right: 10px;
     font-size: large;
 }
 
-.mainBody > div > form >input:focus{
+.mainBody > div > .searchBarDiv>form >input:focus{
     outline-width: 0px;
 }
 
-.searchResult{
-    max-width: 700px;
-    margin-left: 175px;
-}
+
 .searchItems{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 20px;
     margin-bottom: 25px;
 }
 
-.searchItems > h3{
+
+.optionsBelowInput {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: fit-content;
+    
+}
+
+.optionsBelowInput > a{
     text-decoration: none;
+    color: grey;
+}
+
+.optionsBelowInput > a{
+    
+}
+
+.searchResult{
+    margin-left: 1px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.searchItems{
+    width: 630px;
+    margin-left: 9vw;
+    text-align: left;
+    min-width: 400px;
 }
