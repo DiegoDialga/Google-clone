@@ -12,8 +12,11 @@ import CloseIcon from '@mui/icons-material/Close';
 import KeyboardVoiceIcon from '@mui/icons-material/KeyboardVoice';
 import SearchIcon from '@mui/icons-material/Search';
 
-const API_KEY = 'AIzaSyDpbVaPPMHGJpp5J55Y6_t6OyEtN9zxfic';
-const SearchEngineId = 'b43f3d9eb090d4aaa';
+//paste api key that you can acquire from google engine here
+const API_KEY = '';
+
+//paste search engine id here
+const SearchEngineId = '';
 
 
 function SecondPage(){
